@@ -1,0 +1,59 @@
+@import "reset";
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+body{
+  width: 100%;
+}
+.header-nav {
+
+  // .header-nav__wrapper
+
+  &__wrapper {
+    margin: 0 20px;
+    border: 2px solid magenta;
+  }
+}
+
+  .burger-menu {
+
+		// .burger-menu__button
+
+		&__button {
+      position: absolute;
+      top: 14px;
+      right: 20px;
+      width: 37px;
+      height: 37px;
+      background-color: red;
+
+
+		}
+
+		// .burger-menu__lines
+
+		&__lines{
+top: 50%;
+right: 50%;
+transform: translate(-50% -50%);
+position: absolute;
+width: 24px;
+height: 3px;
+background-color: white;
+}
+     &::after &::before{
+      position: relative;
+      width: 24px;
+      height: 3px;
+    background-color: white;
+
+		}
+    &::after{
+      content:'';
+      top: 8px;
+    }
+
+    &::before{
+      content:'';
+      top: -8px;
+    }
+  }
